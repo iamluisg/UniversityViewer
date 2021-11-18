@@ -13,19 +13,10 @@
 		9C3B52CC274714B600F1C92A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C3B52CB274714B600F1C92A /* Assets.xcassets */; };
 		9C3B52CF274714B600F1C92A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C3B52CD274714B600F1C92A /* LaunchScreen.storyboard */; };
 		9C3B52DA274714B600F1C92A /* UniversityViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3B52D9274714B600F1C92A /* UniversityViewerTests.swift */; };
-		9C3B52E4274714B600F1C92A /* UniversityViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3B52E3274714B600F1C92A /* UniversityViewerUITests.swift */; };
-		9C3B52E6274714B600F1C92A /* UniversityViewerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3B52E5274714B600F1C92A /* UniversityViewerUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		9C3B52D6274714B600F1C92A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9C3B52B7274714B300F1C92A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9C3B52BE274714B300F1C92A;
-			remoteInfo = UniversityViewer;
-		};
-		9C3B52E0274714B600F1C92A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9C3B52B7274714B300F1C92A /* Project object */;
 			proxyType = 1;
@@ -44,9 +35,6 @@
 		9C3B52D0274714B600F1C92A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C3B52D5274714B600F1C92A /* UniversityViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UniversityViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C3B52D9274714B600F1C92A /* UniversityViewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityViewerTests.swift; sourceTree = "<group>"; };
-		9C3B52DF274714B600F1C92A /* UniversityViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UniversityViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9C3B52E3274714B600F1C92A /* UniversityViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityViewerUITests.swift; sourceTree = "<group>"; };
-		9C3B52E5274714B600F1C92A /* UniversityViewerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityViewerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,13 +52,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9C3B52DC274714B600F1C92A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -79,7 +60,6 @@
 			children = (
 				9C3B52C1274714B300F1C92A /* UniversityViewer */,
 				9C3B52D8274714B600F1C92A /* UniversityViewerTests */,
-				9C3B52E2274714B600F1C92A /* UniversityViewerUITests */,
 				9C3B52C0274714B300F1C92A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,7 +69,6 @@
 			children = (
 				9C3B52BF274714B300F1C92A /* UniversityViewer.app */,
 				9C3B52D5274714B600F1C92A /* UniversityViewerTests.xctest */,
-				9C3B52DF274714B600F1C92A /* UniversityViewerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -113,15 +92,6 @@
 				9C3B52D9274714B600F1C92A /* UniversityViewerTests.swift */,
 			);
 			path = UniversityViewerTests;
-			sourceTree = "<group>";
-		};
-		9C3B52E2274714B600F1C92A /* UniversityViewerUITests */ = {
-			isa = PBXGroup;
-			children = (
-				9C3B52E3274714B600F1C92A /* UniversityViewerUITests.swift */,
-				9C3B52E5274714B600F1C92A /* UniversityViewerUITestsLaunchTests.swift */,
-			);
-			path = UniversityViewerUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,24 +132,6 @@
 			productReference = 9C3B52D5274714B600F1C92A /* UniversityViewerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		9C3B52DE274714B600F1C92A /* UniversityViewerUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9C3B52EF274714B600F1C92A /* Build configuration list for PBXNativeTarget "UniversityViewerUITests" */;
-			buildPhases = (
-				9C3B52DB274714B600F1C92A /* Sources */,
-				9C3B52DC274714B600F1C92A /* Frameworks */,
-				9C3B52DD274714B600F1C92A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9C3B52E1274714B600F1C92A /* PBXTargetDependency */,
-			);
-			name = UniversityViewerUITests;
-			productName = UniversityViewerUITests;
-			productReference = 9C3B52DF274714B600F1C92A /* UniversityViewerUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -194,10 +146,6 @@
 						CreatedOnToolsVersion = 13.1;
 					};
 					9C3B52D4274714B600F1C92A = {
-						CreatedOnToolsVersion = 13.1;
-						TestTargetID = 9C3B52BE274714B300F1C92A;
-					};
-					9C3B52DE274714B600F1C92A = {
 						CreatedOnToolsVersion = 13.1;
 						TestTargetID = 9C3B52BE274714B300F1C92A;
 					};
@@ -218,7 +166,6 @@
 			targets = (
 				9C3B52BE274714B300F1C92A /* UniversityViewer */,
 				9C3B52D4274714B600F1C92A /* UniversityViewerTests */,
-				9C3B52DE274714B600F1C92A /* UniversityViewerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -234,13 +181,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9C3B52D3274714B600F1C92A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9C3B52DD274714B600F1C92A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -268,15 +208,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9C3B52DB274714B600F1C92A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9C3B52E6274714B600F1C92A /* UniversityViewerUITestsLaunchTests.swift in Sources */,
-				9C3B52E4274714B600F1C92A /* UniversityViewerUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -284,11 +215,6 @@
 			isa = PBXTargetDependency;
 			target = 9C3B52BE274714B300F1C92A /* UniversityViewer */;
 			targetProxy = 9C3B52D6274714B600F1C92A /* PBXContainerItemProxy */;
-		};
-		9C3B52E1274714B600F1C92A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9C3B52BE274714B300F1C92A /* UniversityViewer */;
-			targetProxy = 9C3B52E0274714B600F1C92A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -526,52 +452,6 @@
 			};
 			name = Release;
 		};
-		9C3B52F0274714B600F1C92A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Y2Y35SN656;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.UniversityViewerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = UniversityViewer;
-			};
-			name = Debug;
-		};
-		9C3B52F1274714B600F1C92A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Y2Y35SN656;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.UniversityViewerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = UniversityViewer;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -598,15 +478,6 @@
 			buildConfigurations = (
 				9C3B52ED274714B600F1C92A /* Debug */,
 				9C3B52EE274714B600F1C92A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9C3B52EF274714B600F1C92A /* Build configuration list for PBXNativeTarget "UniversityViewerUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9C3B52F0274714B600F1C92A /* Debug */,
-				9C3B52F1274714B600F1C92A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
