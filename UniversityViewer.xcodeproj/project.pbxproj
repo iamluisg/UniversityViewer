@@ -20,6 +20,7 @@
 		9C3B530B27471A9500F1C92A /* SharedAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9C3B52F727471A9500F1C92A /* SharedAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9C3B531427471AE800F1C92A /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3B531327471AE800F1C92A /* HTTPClient.swift */; };
 		9C3B531627471B0C00F1C92A /* HTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3B531527471B0C00F1C92A /* HTTPError.swift */; };
+		9C3B531927471B9700F1C92A /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3B531827471B9700F1C92A /* URLSessionHTTPClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		9C3B530527471A9500F1C92A /* SharedAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedAPITests.swift; sourceTree = "<group>"; };
 		9C3B531327471AE800F1C92A /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		9C3B531527471B0C00F1C92A /* HTTPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPError.swift; sourceTree = "<group>"; };
+		9C3B531827471B9700F1C92A /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +170,7 @@
 				9C3B52F927471A9500F1C92A /* SharedAPI.h */,
 				9C3B531327471AE800F1C92A /* HTTPClient.swift */,
 				9C3B531527471B0C00F1C92A /* HTTPError.swift */,
+				9C3B531727471B7600F1C92A /* SharedAPI Infrastructure */,
 			);
 			path = SharedAPI;
 			sourceTree = "<group>";
@@ -178,6 +181,14 @@
 				9C3B530527471A9500F1C92A /* SharedAPITests.swift */,
 			);
 			path = SharedAPITests;
+			sourceTree = "<group>";
+		};
+		9C3B531727471B7600F1C92A /* SharedAPI Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				9C3B531827471B9700F1C92A /* URLSessionHTTPClient.swift */,
+			);
+			path = "SharedAPI Infrastructure";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -374,6 +385,7 @@
 			files = (
 				9C3B531627471B0C00F1C92A /* HTTPError.swift in Sources */,
 				9C3B531427471AE800F1C92A /* HTTPClient.swift in Sources */,
+				9C3B531927471B9700F1C92A /* URLSessionHTTPClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
