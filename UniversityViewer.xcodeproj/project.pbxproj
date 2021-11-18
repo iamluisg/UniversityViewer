@@ -22,6 +22,12 @@
 		9C3B531927471B9700F1C92A /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3B531827471B9700F1C92A /* URLSessionHTTPClient.swift */; };
 		9C3B531C27471C2700F1C92A /* URLSessionHTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3B531B27471C2700F1C92A /* URLSessionHTTPClientTests.swift */; };
 		9C3B531E27471C5900F1C92A /* XCTestCaseExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3B531D27471C5900F1C92A /* XCTestCaseExtensions.swift */; };
+		9C3B532C27471DB600F1C92A /* UniversitySearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C3B532427471DB600F1C92A /* UniversitySearch.framework */; };
+		9C3B533327471DB600F1C92A /* UniversitySearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3B533227471DB600F1C92A /* UniversitySearchTests.swift */; };
+		9C3B533427471DB600F1C92A /* UniversitySearch.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C3B532627471DB600F1C92A /* UniversitySearch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C3B533727471DB600F1C92A /* UniversitySearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C3B532427471DB600F1C92A /* UniversitySearch.framework */; };
+		9C3B533827471DB600F1C92A /* UniversitySearch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9C3B532427471DB600F1C92A /* UniversitySearch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9C3B534027471DE100F1C92A /* UniversityLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3B533F27471DE100F1C92A /* UniversityLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,27 @@
 			remoteGlobalIDString = 9C3B52F627471A9500F1C92A;
 			remoteInfo = SharedAPI;
 		};
+		9C3B532D27471DB600F1C92A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C3B52B7274714B300F1C92A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C3B532327471DB600F1C92A;
+			remoteInfo = UniversitySearch;
+		};
+		9C3B532F27471DB600F1C92A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C3B52B7274714B300F1C92A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C3B52BE274714B300F1C92A;
+			remoteInfo = UniversityViewer;
+		};
+		9C3B533527471DB600F1C92A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C3B52B7274714B300F1C92A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C3B532327471DB600F1C92A;
+			remoteInfo = UniversitySearch;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -62,6 +89,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				9C3B533827471DB600F1C92A /* UniversitySearch.framework in Embed Frameworks */,
 				9C3B530B27471A9500F1C92A /* SharedAPI.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -87,6 +115,11 @@
 		9C3B531827471B9700F1C92A /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
 		9C3B531B27471C2700F1C92A /* URLSessionHTTPClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClientTests.swift; sourceTree = "<group>"; };
 		9C3B531D27471C5900F1C92A /* XCTestCaseExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestCaseExtensions.swift; sourceTree = "<group>"; };
+		9C3B532427471DB600F1C92A /* UniversitySearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UniversitySearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C3B532627471DB600F1C92A /* UniversitySearch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UniversitySearch.h; sourceTree = "<group>"; };
+		9C3B532B27471DB600F1C92A /* UniversitySearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UniversitySearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C3B533227471DB600F1C92A /* UniversitySearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversitySearchTests.swift; sourceTree = "<group>"; };
+		9C3B533F27471DE100F1C92A /* UniversityLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C3B533727471DB600F1C92A /* UniversitySearch.framework in Frameworks */,
 				9C3B530A27471A9500F1C92A /* SharedAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -120,6 +154,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9C3B532127471DB600F1C92A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C3B532827471DB600F1C92A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C3B532C27471DB600F1C92A /* UniversitySearch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -130,6 +179,8 @@
 				9C3B52D8274714B600F1C92A /* UniversityViewerTests */,
 				9C3B52F827471A9500F1C92A /* SharedAPI */,
 				9C3B530427471A9500F1C92A /* SharedAPITests */,
+				9C3B532527471DB600F1C92A /* UniversitySearch */,
+				9C3B533127471DB600F1C92A /* UniversitySearchTests */,
 				9C3B52C0274714B300F1C92A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -141,6 +192,8 @@
 				9C3B52D5274714B600F1C92A /* UniversityViewerTests.xctest */,
 				9C3B52F727471A9500F1C92A /* SharedAPI.framework */,
 				9C3B52FE27471A9500F1C92A /* SharedAPITests.xctest */,
+				9C3B532427471DB600F1C92A /* UniversitySearch.framework */,
+				9C3B532B27471DB600F1C92A /* UniversitySearchTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -202,6 +255,23 @@
 			path = "SharedAPI Infrastructure Tests";
 			sourceTree = "<group>";
 		};
+		9C3B532527471DB600F1C92A /* UniversitySearch */ = {
+			isa = PBXGroup;
+			children = (
+				9C3B532627471DB600F1C92A /* UniversitySearch.h */,
+				9C3B533F27471DE100F1C92A /* UniversityLoader.swift */,
+			);
+			path = UniversitySearch;
+			sourceTree = "<group>";
+		};
+		9C3B533127471DB600F1C92A /* UniversitySearchTests */ = {
+			isa = PBXGroup;
+			children = (
+				9C3B533227471DB600F1C92A /* UniversitySearchTests.swift */,
+			);
+			path = UniversitySearchTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -210,6 +280,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C3B530727471A9500F1C92A /* SharedAPI.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C3B531F27471DB600F1C92A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C3B533427471DB600F1C92A /* UniversitySearch.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +307,7 @@
 			);
 			dependencies = (
 				9C3B530927471A9500F1C92A /* PBXTargetDependency */,
+				9C3B533627471DB600F1C92A /* PBXTargetDependency */,
 			);
 			name = UniversityViewer;
 			productName = UniversityViewer;
@@ -290,6 +369,43 @@
 			productReference = 9C3B52FE27471A9500F1C92A /* SharedAPITests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		9C3B532327471DB600F1C92A /* UniversitySearch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C3B533927471DB600F1C92A /* Build configuration list for PBXNativeTarget "UniversitySearch" */;
+			buildPhases = (
+				9C3B531F27471DB600F1C92A /* Headers */,
+				9C3B532027471DB600F1C92A /* Sources */,
+				9C3B532127471DB600F1C92A /* Frameworks */,
+				9C3B532227471DB600F1C92A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UniversitySearch;
+			productName = UniversitySearch;
+			productReference = 9C3B532427471DB600F1C92A /* UniversitySearch.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9C3B532A27471DB600F1C92A /* UniversitySearchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C3B533C27471DB600F1C92A /* Build configuration list for PBXNativeTarget "UniversitySearchTests" */;
+			buildPhases = (
+				9C3B532727471DB600F1C92A /* Sources */,
+				9C3B532827471DB600F1C92A /* Frameworks */,
+				9C3B532927471DB600F1C92A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C3B532E27471DB600F1C92A /* PBXTargetDependency */,
+				9C3B533027471DB600F1C92A /* PBXTargetDependency */,
+			);
+			name = UniversitySearchTests;
+			productName = UniversitySearchTests;
+			productReference = 9C3B532B27471DB600F1C92A /* UniversitySearchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -315,6 +431,14 @@
 						CreatedOnToolsVersion = 13.1;
 						TestTargetID = 9C3B52BE274714B300F1C92A;
 					};
+					9C3B532327471DB600F1C92A = {
+						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1310;
+					};
+					9C3B532A27471DB600F1C92A = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 9C3B52BE274714B300F1C92A;
+					};
 				};
 			};
 			buildConfigurationList = 9C3B52BA274714B300F1C92A /* Build configuration list for PBXProject "UniversityViewer" */;
@@ -334,6 +458,8 @@
 				9C3B52D4274714B600F1C92A /* UniversityViewerTests */,
 				9C3B52F627471A9500F1C92A /* SharedAPI */,
 				9C3B52FD27471A9500F1C92A /* SharedAPITests */,
+				9C3B532327471DB600F1C92A /* UniversitySearch */,
+				9C3B532A27471DB600F1C92A /* UniversitySearchTests */,
 			);
 		};
 /* End PBXProject section */
@@ -363,6 +489,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9C3B52FC27471A9500F1C92A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C3B532227471DB600F1C92A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C3B532927471DB600F1C92A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -409,6 +549,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9C3B532027471DB600F1C92A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C3B534027471DE100F1C92A /* UniversityLoader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C3B532727471DB600F1C92A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C3B533327471DB600F1C92A /* UniversitySearchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -431,6 +587,21 @@
 			isa = PBXTargetDependency;
 			target = 9C3B52F627471A9500F1C92A /* SharedAPI */;
 			targetProxy = 9C3B530827471A9500F1C92A /* PBXContainerItemProxy */;
+		};
+		9C3B532E27471DB600F1C92A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C3B532327471DB600F1C92A /* UniversitySearch */;
+			targetProxy = 9C3B532D27471DB600F1C92A /* PBXContainerItemProxy */;
+		};
+		9C3B533027471DB600F1C92A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C3B52BE274714B300F1C92A /* UniversityViewer */;
+			targetProxy = 9C3B532F27471DB600F1C92A /* PBXContainerItemProxy */;
+		};
+		9C3B533627471DB600F1C92A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C3B532327471DB600F1C92A /* UniversitySearch */;
+			targetProxy = 9C3B533527471DB600F1C92A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -779,6 +950,115 @@
 			};
 			name = Release;
 		};
+		9C3B533A27471DB600F1C92A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Y2Y35SN656;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.UniversitySearch;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9C3B533B27471DB600F1C92A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Y2Y35SN656;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.UniversitySearch;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9C3B533D27471DB600F1C92A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y2Y35SN656;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.UniversitySearchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UniversityViewer.app/UniversityViewer";
+			};
+			name = Debug;
+		};
+		9C3B533E27471DB600F1C92A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y2Y35SN656;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.UniversitySearchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UniversityViewer.app/UniversityViewer";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -823,6 +1103,24 @@
 			buildConfigurations = (
 				9C3B531127471A9500F1C92A /* Debug */,
 				9C3B531227471A9500F1C92A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C3B533927471DB600F1C92A /* Build configuration list for PBXNativeTarget "UniversitySearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C3B533A27471DB600F1C92A /* Debug */,
+				9C3B533B27471DB600F1C92A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C3B533C27471DB600F1C92A /* Build configuration list for PBXNativeTarget "UniversitySearchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C3B533D27471DB600F1C92A /* Debug */,
+				9C3B533E27471DB600F1C92A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
