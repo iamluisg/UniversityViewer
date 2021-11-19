@@ -13,7 +13,7 @@ class UniversityViewModel: ObservableObject {
 
     // Combine variables
     @Published private(set) var universities: [University] = []
-    
+
     // Passed in variables
     var loader: UniversityLoader
     

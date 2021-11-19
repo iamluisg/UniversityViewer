@@ -6,7 +6,6 @@
 //
 
 import Foundation
-#warning("I don't know why this import is giving me an error message but Xcode is still able to build and run all tests fine. I cannot seem to get rid of this Xcode error message.")
 import SharedAPI
 
 public protocol UniversityLoader {
@@ -44,3 +43,4 @@ public final class UniversityRemoteLoader: UniversityLoader {
         return task
     }
 }
+

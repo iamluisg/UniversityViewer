@@ -18,7 +18,8 @@ class UniversityContainerViewController: UIViewController {
         didSet {
             self.disposables.insert (
                 uniListViewController.searchStringPublisher.sink(receiveValue: { search in
-                self.universityViewModel.fetchUnis(search)})
+                    self.universityViewModel.fetchUnis(search)
+                })
             )
         }
     }
@@ -102,6 +103,6 @@ class UniversityContainerViewController: UIViewController {
 //    }
     
     @objc func reload() {
-        self.universityViewModel.fetchUnis(nil)
+//        self.universityViewModel.fetchUnis(nil)
     }
 }

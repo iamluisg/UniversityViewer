@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let client = SharedAPI.URLSessionHTTPClient(session: .shared)
         let loader = UniversityRemoteLoader(client: client)
         let model = UniversityViewModel(loader)
-        
+
         let universityContainer = UniversityContainerViewController(viewModel: model)
         window.rootViewController = UINavigationController(rootViewController: universityContainer)
         window.makeKeyAndVisible()
@@ -28,4 +28,3 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         self.window = window
     }
 }
-
