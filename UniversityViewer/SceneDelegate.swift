@@ -16,13 +16,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: windowScene)
-        window.rootViewController = UniversityContainerViewController()
+ 
+        let client = SharedAPI.URLSessionHTTPClient(session: .shared)
+        let loader = UniversityLoader(client: client)
+        let model = UniversityViewModel(loader)
+        
+        window.rootViewController = UniversityContainerViewController(viewModel: model)
         window.makeKeyAndVisible()
-        
-//        let client = SharedAPI.URLSessionHTTPClient(session: .shared)
-//        self.loader = UniversityLoader(client: client)
-//        let model = UniversityViewModel(self.loader!)
-        
+
         self.window = window
     }
 }

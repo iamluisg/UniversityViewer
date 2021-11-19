@@ -33,6 +33,8 @@
 		9C3B534C27473EF800F1C92A /* UniversityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3B534B27473EF800F1C92A /* UniversityViewModel.swift */; };
 		9C3B534E274742F000F1C92A /* UniversityViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3B534D274742F000F1C92A /* UniversityViewModelTests.swift */; };
 		9C3B5350274744DF00F1C92A /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3B534F274744DF00F1C92A /* Endpoint.swift */; };
+		9C3B53522747494300F1C92A /* UniversityListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3B53512747494300F1C92A /* UniversityListViewController.swift */; };
+		9C3B5354274749D400F1C92A /* UniversityListSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3B5353274749D400F1C92A /* UniversityListSwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +131,8 @@
 		9C3B534B27473EF800F1C92A /* UniversityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityViewModel.swift; sourceTree = "<group>"; };
 		9C3B534D274742F000F1C92A /* UniversityViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityViewModelTests.swift; sourceTree = "<group>"; };
 		9C3B534F274744DF00F1C92A /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		9C3B53512747494300F1C92A /* UniversityListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityListViewController.swift; sourceTree = "<group>"; };
+		9C3B5353274749D400F1C92A /* UniversityListSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityListSwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -289,7 +293,9 @@
 			isa = PBXGroup;
 			children = (
 				9C3B534827473E4C00F1C92A /* UniversityContainerViewController.swift */,
+				9C3B53512747494300F1C92A /* UniversityListViewController.swift */,
 				9C3B534B27473EF800F1C92A /* UniversityViewModel.swift */,
+				9C3B5353274749D400F1C92A /* UniversityListSwiftUIView.swift */,
 			);
 			path = UniversitySearch;
 			sourceTree = "<group>";
@@ -544,9 +550,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C3B53522747494300F1C92A /* UniversityListViewController.swift in Sources */,
 				9C3B52C3274714B300F1C92A /* AppDelegate.swift in Sources */,
 				9C3B534927473E4C00F1C92A /* UniversityContainerViewController.swift in Sources */,
 				9C3B534C27473EF800F1C92A /* UniversityViewModel.swift in Sources */,
+				9C3B5354274749D400F1C92A /* UniversityListSwiftUIView.swift in Sources */,
 				9C3B52C5274714B300F1C92A /* SceneDelegate.swift in Sources */,
 				9C3B5350274744DF00F1C92A /* Endpoint.swift in Sources */,
 			);
