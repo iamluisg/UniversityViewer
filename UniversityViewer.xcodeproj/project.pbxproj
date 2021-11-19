@@ -11,7 +11,6 @@
 		9C3B52C5274714B300F1C92A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3B52C4274714B300F1C92A /* SceneDelegate.swift */; };
 		9C3B52CC274714B600F1C92A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C3B52CB274714B600F1C92A /* Assets.xcassets */; };
 		9C3B52CF274714B600F1C92A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C3B52CD274714B600F1C92A /* LaunchScreen.storyboard */; };
-		9C3B52DA274714B600F1C92A /* UniversityViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3B52D9274714B600F1C92A /* UniversityViewerTests.swift */; };
 		9C3B52FF27471A9500F1C92A /* SharedAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C3B52F727471A9500F1C92A /* SharedAPI.framework */; };
 		9C3B530727471A9500F1C92A /* SharedAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C3B52F927471A9500F1C92A /* SharedAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C3B530A27471A9500F1C92A /* SharedAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C3B52F727471A9500F1C92A /* SharedAPI.framework */; };
@@ -116,7 +115,6 @@
 		9C3B52CE274714B600F1C92A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C3B52D0274714B600F1C92A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C3B52D5274714B600F1C92A /* UniversityViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UniversityViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9C3B52D9274714B600F1C92A /* UniversityViewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityViewerTests.swift; sourceTree = "<group>"; };
 		9C3B52F727471A9500F1C92A /* SharedAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SharedAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C3B52F927471A9500F1C92A /* SharedAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SharedAPI.h; sourceTree = "<group>"; };
 		9C3B52FE27471A9500F1C92A /* SharedAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SharedAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -240,7 +238,6 @@
 		9C3B52D8274714B600F1C92A /* UniversityViewerTests */ = {
 			isa = PBXGroup;
 			children = (
-				9C3B52D9274714B600F1C92A /* UniversityViewerTests.swift */,
 				9C3B534D274742F000F1C92A /* UniversityViewModelTests.swift */,
 			);
 			path = UniversityViewerTests;
@@ -581,7 +578,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C3B534E274742F000F1C92A /* UniversityViewModelTests.swift in Sources */,
-				9C3B52DA274714B600F1C92A /* UniversityViewerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
