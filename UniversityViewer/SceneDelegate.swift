@@ -18,7 +18,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: windowScene)
  
         let client = SharedAPI.URLSessionHTTPClient(session: .shared)
-        let loader = UniversityLoader(client: client)
+        let loader = UniversityRemoteLoader(client: client)
         let model = UniversityViewModel(loader)
         
         window.rootViewController = UniversityContainerViewController(viewModel: model)

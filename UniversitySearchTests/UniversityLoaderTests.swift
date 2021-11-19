@@ -97,7 +97,7 @@ class UniversityLoaderTests: XCTestCase {
     func test_load_doesNotDeliverResultAfterTheSUTInstanceHasBeenDeallocated() {
         let urlRequest = URLRequest(url: aURL)
         let client = HTTPClientSpy()
-        var sut: UniversityLoader? = UniversityLoader(client: client)
+        var sut: UniversityRemoteLoader? = UniversityRemoteLoader(client: client)
         
         var capturedResults = [Result<[University], HTTPError>]()
         sut?.searchUniversities(urlRequest: urlRequest) { capturedResults.append($0) }
@@ -109,9 +109,9 @@ class UniversityLoaderTests: XCTestCase {
    
     // MARK: - Helpers
     private func makeSUT(file: StaticString = #filePath,
-                         line: UInt = #line) -> (sut: UniversityLoader, client: HTTPClientSpy) {
+                         line: UInt = #line) -> (sut: UniversityRemoteLoader, client: HTTPClientSpy) {
         let client = HTTPClientSpy()
-        let sut = UniversityLoader(client: client)
+        let sut = UniversityRemoteLoader(client: client)
         trackForMemoryLeaks(sut, file: file, line: line)
         trackForMemoryLeaks(client, file: file, line: line)
         return (sut, client)
@@ -121,7 +121,7 @@ class UniversityLoaderTests: XCTestCase {
         return .failure(error)
     }
     
-    private func expect<T>(_ sut: UniversityLoader,
+    private func expect<T>(_ sut: UniversityRemoteLoader,
                         toCompleteWith expectedResult: Result<T, HTTPError>,
                         when action: () -> Void,
                         file: StaticString = #filePath,

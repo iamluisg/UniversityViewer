@@ -8,7 +8,13 @@
 import Foundation
 import SharedAPI
 
-public final class UniversityLoader {
+public protocol UniversityLoader {
+    @discardableResult
+    func searchUniversities(urlRequest: URLRequest,
+                                  completion: @escaping (Result<[University], HTTPError>) -> Void) -> URLSessionDataTask?
+}
+
+public final class UniversityRemoteLoader: UniversityLoader {
     private let client: HTTPClient
     
     public init(client: HTTPClient) {
