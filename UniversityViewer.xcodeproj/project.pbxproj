@@ -28,6 +28,7 @@
 		9C3B533827471DB600F1C92A /* UniversitySearch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9C3B532427471DB600F1C92A /* UniversitySearch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9C3B534027471DE100F1C92A /* UniversityLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3B533F27471DE100F1C92A /* UniversityLoader.swift */; };
 		9C3B5342274721E300F1C92A /* UniversityLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3B5341274721E300F1C92A /* UniversityLoaderTests.swift */; };
+		9C3B534427473CB300F1C92A /* University.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3B534327473CB300F1C92A /* University.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +121,7 @@
 		9C3B532B27471DB600F1C92A /* UniversitySearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UniversitySearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C3B533F27471DE100F1C92A /* UniversityLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityLoader.swift; sourceTree = "<group>"; };
 		9C3B5341274721E300F1C92A /* UniversityLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityLoaderTests.swift; sourceTree = "<group>"; };
+		9C3B534327473CB300F1C92A /* University.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = University.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,6 +262,7 @@
 			children = (
 				9C3B532627471DB600F1C92A /* UniversitySearch.h */,
 				9C3B533F27471DE100F1C92A /* UniversityLoader.swift */,
+				9C3B534327473CB300F1C92A /* University.swift */,
 			);
 			path = UniversitySearch;
 			sourceTree = "<group>";
@@ -554,6 +557,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C3B534027471DE100F1C92A /* UniversityLoader.swift in Sources */,
+				9C3B534427473CB300F1C92A /* University.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
