@@ -21,7 +21,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let loader = UniversityRemoteLoader(client: client)
         let model = UniversityViewModel(loader)
         
-        window.rootViewController = UniversityContainerViewController(viewModel: model)
+        let universityContainer = UniversityContainerViewController(viewModel: model)
+        window.rootViewController = UINavigationController(rootViewController: universityContainer)
         window.makeKeyAndVisible()
 
         self.window = window
