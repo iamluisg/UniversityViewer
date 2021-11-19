@@ -35,6 +35,9 @@
 		9C3B5350274744DF00F1C92A /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3B534F274744DF00F1C92A /* Endpoint.swift */; };
 		9C3B53522747494300F1C92A /* UniversityListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3B53512747494300F1C92A /* UniversityListViewController.swift */; };
 		9C3B5354274749D400F1C92A /* UniversityListSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3B5353274749D400F1C92A /* UniversityListSwiftUIView.swift */; };
+		9C3B535627474BAE00F1C92A /* UniversityTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3B535527474BAE00F1C92A /* UniversityTableViewDataSource.swift */; };
+		9C3B535827474C4E00F1C92A /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3B535727474C4E00F1C92A /* UIViewControllerExtensions.swift */; };
+		9C3B535A27474C8E00F1C92A /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3B535927474C8E00F1C92A /* UITableViewExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +136,9 @@
 		9C3B534F274744DF00F1C92A /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		9C3B53512747494300F1C92A /* UniversityListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityListViewController.swift; sourceTree = "<group>"; };
 		9C3B5353274749D400F1C92A /* UniversityListSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityListSwiftUIView.swift; sourceTree = "<group>"; };
+		9C3B535527474BAE00F1C92A /* UniversityTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityTableViewDataSource.swift; sourceTree = "<group>"; };
+		9C3B535727474C4E00F1C92A /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		9C3B535927474C8E00F1C92A /* UITableViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +224,9 @@
 				9C3B52C2274714B300F1C92A /* AppDelegate.swift */,
 				9C3B52C4274714B300F1C92A /* SceneDelegate.swift */,
 				9C3B534F274744DF00F1C92A /* Endpoint.swift */,
+				9C3B535527474BAE00F1C92A /* UniversityTableViewDataSource.swift */,
+				9C3B535727474C4E00F1C92A /* UIViewControllerExtensions.swift */,
+				9C3B535927474C8E00F1C92A /* UITableViewExtensions.swift */,
 				9C3B534A27473EC900F1C92A /* UniversitySearch */,
 				9C3B52CB274714B600F1C92A /* Assets.xcassets */,
 				9C3B52CD274714B600F1C92A /* LaunchScreen.storyboard */,
@@ -554,8 +563,11 @@
 				9C3B52C3274714B300F1C92A /* AppDelegate.swift in Sources */,
 				9C3B534927473E4C00F1C92A /* UniversityContainerViewController.swift in Sources */,
 				9C3B534C27473EF800F1C92A /* UniversityViewModel.swift in Sources */,
+				9C3B535827474C4E00F1C92A /* UIViewControllerExtensions.swift in Sources */,
+				9C3B535A27474C8E00F1C92A /* UITableViewExtensions.swift in Sources */,
 				9C3B5354274749D400F1C92A /* UniversityListSwiftUIView.swift in Sources */,
 				9C3B52C5274714B300F1C92A /* SceneDelegate.swift in Sources */,
+				9C3B535627474BAE00F1C92A /* UniversityTableViewDataSource.swift in Sources */,
 				9C3B5350274744DF00F1C92A /* Endpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
