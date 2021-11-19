@@ -32,14 +32,20 @@ class UniversityViewModel: ObservableObject {
     
     // MARK: - Actions
     func fetchUnis(_ name: String?) {
-        let request = Endpoint.searchUniversity(name ?? "").urlRequest
+        var defaultQuery: String = "san"
+        if let newQuery = name, !newQuery.isEmpty {
+            defaultQuery = newQuery
+        }
+        
+        let request = Endpoint.searchUniversity(defaultQuery).urlRequest
         self.loader.searchUniversities(urlRequest: request) { [weak self] result in
-            switch result {
-            case let .success(universities):
-                self?.universities = universities
-                print("got the unis \(universities)")
-            case let .failure(error):
-                print("request \(error.request) failed with code: \(error.code) and description \(error.localizedDescription)")
+            DispatchQueue.main.async {
+                switch result {
+                case let .success(universities):
+                    self?.universities = universities
+                case let .failure(error):
+                    print("request \(error.request) failed with code: \(error.code) and description \(error.localizedDescription)")
+                }
             }
         }
     }

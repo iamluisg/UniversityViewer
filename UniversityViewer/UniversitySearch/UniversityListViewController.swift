@@ -33,14 +33,19 @@ class UniversityListViewController: UIViewController {
     init(tableViewAdapter: UniversityTableViewHandler, frame: CGRect = .zero) {
         self.tableViewHandler = tableViewAdapter
         super.init(nibName: nil, bundle: nil)
-        setupSearchBar()
-        uikitBuild()
+        sharedConfiguration()
+        buildUIKit()
     }
 
     init(swiftUIView uniModel: UniversityViewModel) {
         super.init(nibName: nil, bundle: nil)
+        sharedConfiguration()
+        self.buildSwiftUI(uniModel: uniModel)
+    }
+    
+    func sharedConfiguration() {
+        self.view.backgroundColor = .white
         setupSearchBar()
-        self.switUIBuild(uniModel: uniModel)
     }
 
     private func setupSearchBar() {
@@ -66,7 +71,7 @@ class UniversityListViewController: UIViewController {
         }
     }
     
-    func switUIBuild(uniModel: UniversityViewModel) {
+    func buildSwiftUI(uniModel: UniversityViewModel) {
         let view = UniversitySwiftUIView(uniModel: uniModel) { [weak self] uni in
             self?.onUniversityTap?(uni)
         }
@@ -82,28 +87,16 @@ class UniversityListViewController: UIViewController {
         }
     }
     
-    func uikitBuild() {
-        button = UIButton()
-        self.view.addSubview(button)
-        button.setTitle("Tap Me!", for: .normal)
-        button.setTitleColor(.blue, for: .normal)
-        button.snp.makeConstraints { view in
-            view.height.equalTo(20)
-            view.top.equalTo(searchBar.snp.bottom)
-            view.left.right.equalToSuperview().offset(5)
-        }
-        
-        self.view.backgroundColor = .white
-
+    func buildUIKit() {
         tableView = UITableView(self.view, .plain, [UniversityTableViewCell.cellIdentifier])
         tableView.backgroundColor = .white
         tableView.delegate = tableViewHandler
         tableView.dataSource = tableViewHandler
 
         tableView.snp.makeConstraints { (view) in
-            view.top.equalTo(button.snp.bottom)
+            view.top.equalTo(searchBar.snp.bottom)
             view.left.right.equalToSuperview()
-            view.bottom.equalToSuperview().inset(20)
+            view.bottom.equalToSuperview()
         }
     }
     
