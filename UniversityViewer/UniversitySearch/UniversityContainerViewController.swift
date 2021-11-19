@@ -7,8 +7,10 @@
 
 import UIKit
 import Combine
-import UniversitySearch
+//import UniversitySearch
 
+#warning("Is it overkill to have a container view controller here and have view creation happen in a different view controller?")
+// This can then become the place where composition of all individual UI components for this page is done.
 class UniversityContainerViewController: UIViewController {
 
     // Child View Controllers
@@ -67,7 +69,11 @@ class UniversityContainerViewController: UIViewController {
             view.top.left.right.bottom.equalToSuperview()
         }
         uniListViewController.onUniversityTap = { [weak self] uni in
-            self?.navigateToUniversity(uni)
+            if let uniURL = URL(string: uni.webPages.first ?? "") {
+                let webViewController = WebviewViewController(uniURL)
+                self?.show(webViewController, sender: self)
+            }
+//            self?.navigateToUniversity(uni)
         }
     }
 
@@ -79,16 +85,21 @@ class UniversityContainerViewController: UIViewController {
             make.top.left.right.bottom.equalToSuperview()
         }
         self.uniListViewController.onUniversityTap = { [weak self] uni in
-            self?.navigateToUniversity(uni)
+            if let uniURL = URL(string: uni.webPages.first ?? "") {
+                let webViewController = WebviewViewController(uniURL)
+                self?.show(webViewController, sender: self)
+            }
+//            self?.navigateToUniversity(uni)
         }
     }
     
-    private func navigateToUniversity(_ university: University) {
-        if let uniURL = URL(string: university.webPages.first ?? "") {
-            let webViewController = WebviewViewController(uniURL)
-            self.show(webViewController, sender: self)
-        }
-    }
+    #warning("I would prefer to use this function instead of duplicating code within the onUniversityTap completion blocks but it requires me to import the UniversitySearch module to have access to the University model. How do I keep from having to import UniversitySearch module in so many places?")
+//    private func navigateToUniversity(_ university: University) {
+//        if let uniURL = URL(string: university.webPages.first ?? "") {
+//            let webViewController = WebviewViewController(uniURL)
+//            self.show(webViewController, sender: self)
+//        }
+//    }
     
     @objc func reload() {
         self.universityViewModel.fetchUnis(nil)

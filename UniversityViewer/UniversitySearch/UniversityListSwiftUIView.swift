@@ -10,7 +10,10 @@ import Combine
 import UniversitySearch
 
 struct UniversitySwiftUIView: View {
+#warning("I don't like that I have to pass in the entire UniversityViewModel here, but if I wanted to just pass in the University model, I would have to make the University model conform to ObservableObject.")
     @ObservedObject var uniModel: UniversityViewModel
+    
+    #warning("What other potential approach could be taken instead of passing in completion blocks to handle button taps and communicate back to the parent UIKit view controller? Something more oriented around combine and binding?")
     var onUniversityTap: ((University) -> Void)?
     
     var body: some View {
@@ -51,12 +54,9 @@ struct UniListViewItem: View {
     }
 }
 
+#warning("What would be an easy way to be able to preview this SwiftUI view? I would have to create a UniversityViewModel which would require making a UniversityLoader, which requires a HTTPClient... Would a mock version only used for previewing be alright")
 //struct UniversityHostingController_Previews: PreviewProvider {
 //    static var previews: some View {
-//        UniversitySwiftUIView(uniModel: getUniVM())
+//        UniversitySwiftUIView(uniModel: )
 //    }
-//}
-
-//func getUniVM() -> UniversityViewModel {
-//    return UniversityViewModel()
 //}

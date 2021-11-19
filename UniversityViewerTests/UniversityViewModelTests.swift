@@ -21,33 +21,25 @@ class UniversityViewModelTests: XCTestCase {
         XCTAssertEqual(loader.requestsMade.count, 0)
     }
     
-    func test_fetchUniversities_makesCall() {
+    func test_fetchUnis_makesAPICall() {
         let client = API()
         let loader = UniversityLoaderSpy(client: client)
         let viewModel = UniversityViewModel(loader)
         
-        viewModel.fetchUnis("har")
+        viewModel.fetchUnis("bay")
         
         XCTAssertEqual(loader.requestsMade.count, 1)
     }
     
-    func test_toBeWritten() {
-        //        loader.searchUniversities(urlRequest: makeURLRequest()) { result in
-        //            receivedResult = result
-        //            exp.fulfill()
-        //        }
-        //
-        //        wait(for: [exp], timeout: 1.0)
-        //
-        //        switch receivedResult {
-        //        case let .success(universities):
-        //            XCTAssertEqual(universities.first?.country, "Canada")
-        //            XCTAssertEqual(universities.first?.name, "Montreal University")
-        //        case let .failure(error):
-        //            XCTFail("expected success but got \(error)")
-        //        case .none:
-        //            XCTFail("expected success but got none case")
-        //        }
+    #warning("Unsure of best way to test universities var is set")
+    // I'm not quite sure of the best way to test that upon return of the
+    // fetchUnis API call that the universities variable is set properly
+    func test_fetchUnis_returnsUniversities() {
+        let client = API()
+        let loader = UniversityLoaderSpy(client: client)
+        let viewModel = UniversityViewModel(loader)
+        
+        viewModel.fetchUnis("bay")
     }
     
     private var aURL: URL {
@@ -59,7 +51,7 @@ class UniversityViewModelTests: XCTestCase {
     }
 }
 
-class UniversityLoaderSpy: UniversityLoader {
+private class UniversityLoaderSpy: UniversityLoader {
     let client: HTTPClient
     
     init(client: HTTPClient) {

@@ -9,6 +9,7 @@ import UIKit
 import Combine
 import SwiftUI
 import SnapKit
+#warning("I start to feel like I am just importing UniversitySearch in so many locations now. Is this a bad thing?")
 import UniversitySearch
 
 class UniversityListViewController: UIViewController {

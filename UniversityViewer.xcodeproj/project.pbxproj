@@ -224,10 +224,10 @@
 				9C3B52C2274714B300F1C92A /* AppDelegate.swift */,
 				9C3B52C4274714B300F1C92A /* SceneDelegate.swift */,
 				9C3B534F274744DF00F1C92A /* Endpoint.swift */,
-				9C3B535527474BAE00F1C92A /* UniversityTableViewDataSource.swift */,
-				9C3B535727474C4E00F1C92A /* UIViewControllerExtensions.swift */,
-				9C3B535927474C8E00F1C92A /* UITableViewExtensions.swift */,
+				9C3B535B2747575C00F1C92A /* WebviewViewController.swift */,
 				9C3B534A27473EC900F1C92A /* UniversitySearch */,
+				9C3B535E2748169800F1C92A /* Data Sources */,
+				9C3B535D2748168800F1C92A /* Extensions */,
 				9C3B52CB274714B600F1C92A /* Assets.xcassets */,
 				9C3B52CD274714B600F1C92A /* LaunchScreen.storyboard */,
 				9C3B52D0274714B600F1C92A /* Info.plist */,
@@ -302,11 +302,27 @@
 			children = (
 				9C3B534827473E4C00F1C92A /* UniversityContainerViewController.swift */,
 				9C3B53512747494300F1C92A /* UniversityListViewController.swift */,
-				9C3B535B2747575C00F1C92A /* WebviewViewController.swift */,
 				9C3B534B27473EF800F1C92A /* UniversityViewModel.swift */,
 				9C3B5353274749D400F1C92A /* UniversityListSwiftUIView.swift */,
 			);
 			path = UniversitySearch;
+			sourceTree = "<group>";
+		};
+		9C3B535D2748168800F1C92A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9C3B535727474C4E00F1C92A /* UIViewControllerExtensions.swift */,
+				9C3B535927474C8E00F1C92A /* UITableViewExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9C3B535E2748169800F1C92A /* Data Sources */ = {
+			isa = PBXGroup;
+			children = (
+				9C3B535527474BAE00F1C92A /* UniversityTableViewDataSource.swift */,
+			);
+			path = "Data Sources";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
