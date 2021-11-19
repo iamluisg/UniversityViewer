@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import UniversitySearch
+import SharedAPI
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -16,6 +18,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: windowScene)
         window.rootViewController = UniversityContainerViewController()
         window.makeKeyAndVisible()
+        
+//        let client = SharedAPI.URLSessionHTTPClient(session: .shared)
+//        self.loader = UniversityLoader(client: client)
+//        let model = UniversityViewModel(self.loader!)
         
         self.window = window
     }

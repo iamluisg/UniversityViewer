@@ -28,16 +28,23 @@ class UniversityViewModel: ObservableObject {
     // Initializers
     init(_ loader: UniversityLoader) {
         self.loader = loader
-        self.fetchUnis(nil)
     }
     
     // MARK: - Actions
     func fetchUnis(_ name: String?) {
-        
+        let request = Endpoint.searchUniversity(name ?? "").urlRequest
+        self.loader.searchUniversities(urlRequest: request) { [weak self] result in
+            switch result {
+            case let .success(universities):
+                self?.universities = universities
+                print("got the unis \(universities)")
+            case let .failure(error):
+                print("request \(error.request) failed with code: \(error.code) and description \(error.localizedDescription)")
+            }
+        }
     }
     
     func buttonPressed() {
         self.isTapped.toggle()
     }
 }
-

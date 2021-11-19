@@ -31,6 +31,8 @@
 		9C3B534727473DBD00F1C92A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9C3B534627473DBD00F1C92A /* SnapKit */; };
 		9C3B534927473E4C00F1C92A /* UniversityContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3B534827473E4C00F1C92A /* UniversityContainerViewController.swift */; };
 		9C3B534C27473EF800F1C92A /* UniversityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3B534B27473EF800F1C92A /* UniversityViewModel.swift */; };
+		9C3B534E274742F000F1C92A /* UniversityViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3B534D274742F000F1C92A /* UniversityViewModelTests.swift */; };
+		9C3B5350274744DF00F1C92A /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3B534F274744DF00F1C92A /* Endpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +127,8 @@
 		9C3B534327473CB300F1C92A /* University.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = University.swift; sourceTree = "<group>"; };
 		9C3B534827473E4C00F1C92A /* UniversityContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityContainerViewController.swift; sourceTree = "<group>"; };
 		9C3B534B27473EF800F1C92A /* UniversityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityViewModel.swift; sourceTree = "<group>"; };
+		9C3B534D274742F000F1C92A /* UniversityViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityViewModelTests.swift; sourceTree = "<group>"; };
+		9C3B534F274744DF00F1C92A /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +213,7 @@
 			children = (
 				9C3B52C2274714B300F1C92A /* AppDelegate.swift */,
 				9C3B52C4274714B300F1C92A /* SceneDelegate.swift */,
+				9C3B534F274744DF00F1C92A /* Endpoint.swift */,
 				9C3B534A27473EC900F1C92A /* UniversitySearch */,
 				9C3B52CB274714B600F1C92A /* Assets.xcassets */,
 				9C3B52CD274714B600F1C92A /* LaunchScreen.storyboard */,
@@ -221,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				9C3B52D9274714B600F1C92A /* UniversityViewerTests.swift */,
+				9C3B534D274742F000F1C92A /* UniversityViewModelTests.swift */,
 			);
 			path = UniversityViewerTests;
 			sourceTree = "<group>";
@@ -542,6 +548,7 @@
 				9C3B534927473E4C00F1C92A /* UniversityContainerViewController.swift in Sources */,
 				9C3B534C27473EF800F1C92A /* UniversityViewModel.swift in Sources */,
 				9C3B52C5274714B300F1C92A /* SceneDelegate.swift in Sources */,
+				9C3B5350274744DF00F1C92A /* Endpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,6 +556,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C3B534E274742F000F1C92A /* UniversityViewModelTests.swift in Sources */,
 				9C3B52DA274714B600F1C92A /* UniversityViewerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
