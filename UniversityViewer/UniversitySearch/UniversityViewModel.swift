@@ -13,14 +13,6 @@ class UniversityViewModel: ObservableObject {
 
     // Combine variables
     @Published private(set) var universities: [University] = []
-    let buttonPressedSubject = PassthroughSubject<Bool, Never>()
-
-    // Binded variables
-    var isTapped: Bool = false {
-        willSet {
-            buttonPressedSubject.send(isTapped)
-        }
-    }
     
     // Passed in variables
     var loader: UniversityLoader
@@ -48,9 +40,5 @@ class UniversityViewModel: ObservableObject {
                 }
             }
         }
-    }
-    
-    func buttonPressed() {
-        self.isTapped.toggle()
     }
 }
