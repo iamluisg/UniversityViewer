@@ -30,8 +30,7 @@ class UniversityListViewController: UIViewController {
     var onUniversityTap: ((University) -> Void)?
 
     // MARK: - Init
-    init(tableViewAdapter: UniversityTableViewHandler, frame: CGRect = .zero) {
-        self.tableViewHandler = tableViewAdapter
+    init() {
         super.init(nibName: nil, bundle: nil)
         sharedConfiguration()
         buildUIKit()
@@ -88,6 +87,10 @@ class UniversityListViewController: UIViewController {
     }
     
     func buildUIKit() {
+        self.tableViewHandler = UniversityTableViewHandler()
+        self.tableViewHandler.onUniversityTap = { [weak self] uni in
+            self?.onUniversityTap?(uni)
+        }
         tableView = UITableView(self.view, .plain, [UniversityTableViewCell.cellIdentifier])
         tableView.backgroundColor = .white
         tableView.delegate = tableViewHandler

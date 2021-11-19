@@ -11,6 +11,7 @@ import UniversitySearch
 class UniversityTableViewHandler: NSObject, UITableViewDelegate, UITableViewDataSource {
 
     var universities: [University] = []
+    var onUniversityTap: ((University) -> Void)?
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return universities.count
@@ -25,6 +26,11 @@ class UniversityTableViewHandler: NSObject, UITableViewDelegate, UITableViewData
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UniversityTableViewCell.height
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let university = universities[indexPath.row]
+        self.onUniversityTap?(university)
     }
 }
 

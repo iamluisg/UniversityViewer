@@ -67,20 +67,26 @@ class UniversityContainerViewController: UIViewController {
             view.top.left.right.bottom.equalToSuperview()
         }
         uniListViewController.onUniversityTap = { [weak self] uni in
-            if let uniURL = URL(string: uni.webPages.first ?? "") {
-                let webViewController = WebviewViewController(uniURL)
-                self?.show(webViewController, sender: self)
-            }
+            self?.navigateToUniversity(uni)
         }
     }
 
     private func buildUIKitVersion() {
-        let handler = UniversityTableViewHandler()
-        self.uniListViewController = UniversityListViewController(tableViewAdapter: handler)
+        self.uniListViewController = UniversityListViewController()
         self.addViewControllerChild(self.uniListViewController)
         self.uniListViewController.view.translatesAutoresizingMaskIntoConstraints = false
         self.uniListViewController.view.snp.makeConstraints { make in
             make.top.left.right.bottom.equalToSuperview()
+        }
+        self.uniListViewController.onUniversityTap = { [weak self] uni in
+            self?.navigateToUniversity(uni)
+        }
+    }
+    
+    private func navigateToUniversity(_ university: University) {
+        if let uniURL = URL(string: university.webPages.first ?? "") {
+            let webViewController = WebviewViewController(uniURL)
+            self.show(webViewController, sender: self)
         }
     }
     
